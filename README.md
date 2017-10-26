@@ -1,2 +1,2 @@
-# react-webpack-babel
-initial boilerplate configured with react, babel and webpack2
+# react-data-table
+proof of concept of a react datatable
