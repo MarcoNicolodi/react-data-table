@@ -1,5 +1,6 @@
 import React from 'react';
 import DataTable from './DataTable';
+import ErrorBoundary from './ErrorBoundary';
 
 const table1 = [
   {
@@ -50,9 +51,9 @@ export default class App extends React.Component {
     return (
      <div style={{textAlign: 'center'}}>
         <h2> Table 1 </h2>
-        <DataTable data={table1} />
-        <h2> Table 2 </h2>
-        <DataTable data={table2} />
+          <DataTable data={table1} />        
+          <h2> Table 2 </h2>
+          <DataTable data={table2} />       
       </div>);
   }
 }
