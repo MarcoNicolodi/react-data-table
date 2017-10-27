@@ -1,13 +1,7 @@
 import React from 'react';
+import generateColumns from '../lib/generate-columns.jsx';
 
-export default class Body extends React.PureComponent {
-    static generateColumns(data) {
-        let j = 0;
-        return Object.values(data).map((value) => {
-            j += 1;
-            return <td key={j} > {value} </td>;
-        });
-    }
+export default class Body extends React.PureComponent {    
 
     static generateRows(data) {
         let i = 0;
@@ -15,7 +9,7 @@ export default class Body extends React.PureComponent {
             i += 1;
             return (
                 <tr key={i}>
-                    {Body.generateColumns(rows)}
+                    {generateColumns(rows)}
                 </tr>
             );
         });
